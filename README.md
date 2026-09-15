@@ -34,6 +34,3 @@ print(result)
 
 This repo exists mainly to build a Git habit — regular commits, clear messages, and eventually branches/PRs — while picking up small coding concepts along the way. Expect messy, incremental, and occasionally broken code.
 
-## License
-
-No license — personal learning repo. Feel free to look around, but don't expect stability or support.
