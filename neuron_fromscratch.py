@@ -16,8 +16,8 @@ def neurons(x, w, b, Activation = None):
     return z
   return Activation(z)
 
-x = np.random.randint(0, 3,size = (3,1))
-w = np.random.randint(0, 3, size = (1,3))
+x = np.random.randint(0, 3,size = (1, 3))
+w = np.random.randint(0, 3, size = (3, 1))
 result = neurons(x,w, 4)
 print(result)
 result = neurons(x , w, 1, Activation= tanh)
