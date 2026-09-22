@@ -34,9 +34,6 @@ print(result)
 A minimal demonstration of liear regression performed using NumPy (`y_pred = a*x + b`). in this code we initally create an array "x" (`x = np.arrange(0, 10, 0.5)`). then we create an array "y" of dependent variables and add noise in it (`y = 3*x + 2 + np.random.normal(0, 1, len(x)`). then we predict the values of y and calculate MSE.
 
 ```python
-import numpy as np
-import matplotlib.pyplot as plt
-import random
 
 w = 7
 b = 2
