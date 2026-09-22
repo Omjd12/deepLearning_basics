@@ -30,6 +30,29 @@ result = neuron(x, w, 1)
 print(result)
 ```
 
+### `linear regresstion from scratch in deep learning`
+A minimal demonstration of liear regression performed using NumPy (`y_pred = a*x + b`). in this code we initally create an array "x" (`x = np.arrange(0, 10, 0.5)`). then we create an array "y" of dependent variables and add noise in it (`y = 3*x + 2 + np.random.normal(0, 1, len(x)`). then we predict the values of y and calculate MSE.
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+import random
+
+w = 7
+b = 2
+np.random.seed(42)
+x = np.arange(0, 10, 0.5)
+y = x*7 + 2+ np.random.normal(0, 1, len(x))
+
+y_pred = w*x + b
+error = y - y_pred
+mse = np.mean(error **2)
+print(mse)
+plt.plot(x, y, color = "blue")
+plt.plot(x, y_pred, color = "red")
+plt.show()
+```
+
 ## Purpose
 
 This repo exists mainly to build a Git habit — regular commits, clear messages, and eventually branches/PRs — while picking up small coding concepts along the way. Expect messy, incremental, and occasionally broken code.
